@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Horses</title>
+</head>
+<body>
+  <div id="table-edit-container">
+    <div>
+      <span>Lines: </span>
+      <input type="number" id="table-rows" min="1" value="8" onchange="generateTableLines()">
+    </div>
+    <div>
+      <span>Columns: </span>
+      <input type="number" id="table-columns" min="1" value="8" onchange="generateTableLines()">
+    </div>
+  </div>
+
+  <table>
+    <tbody>
+      <td onclick="moveHorse(event)" />
+    </tbody>
+  </table>
+
+  <button onclick="clearTable()">Start</button>
+
+  <p></p>
+
+  <script src="index.js"></script>
+</body>
+</html>
